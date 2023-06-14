@@ -1,7 +1,14 @@
 /* Write your CSS here */
 .container {
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  background-image: linear-gradient(to bottom, #2b2c49, #b5b9ff);
+  background-size: cover;
+  margin: 120px;
+  border-radius: 20px;
 }
 
 .heading {
