@@ -1,0 +1,13 @@
+/* Write your CSS here */
+
+.logout-button {
+  background-color: #ffffff;
+  color: #303150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: auto;
+  border-radius: 10px;
+  border-width: 0px;
+}
