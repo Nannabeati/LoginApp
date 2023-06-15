@@ -5,16 +5,16 @@ import './index.css'
 class Message extends Component {
   state = {isLogin: true}
 
-  textMessage = () => {
-    const {isLogin} = this.state
-    if (isLogin === true) {
-      return <h1 className="text-message">Please Login</h1>
-    }
-    return <h1 className="text-message">Welcome User</h1>
-  }
-
   render() {
-    return <div>{this.textMessage()}</div>
+    const {isLogin} = this.state
+    let msg
+    if (isLogin === true) {
+      msg = <h1 className="text-message">Please Login</h1>
+    } else {
+      msg = <h1 className="text-message">Welcome User</h1>
+    }
+
+    return <div>{msg}</div>
   }
 }
 
