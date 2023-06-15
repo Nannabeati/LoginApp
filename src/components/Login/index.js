@@ -6,7 +6,7 @@ class Login extends Component {
   state = {isLogin: true}
 
   loginButton = () => {
-    this.setState(prevState => ({isLogin: !prevState.login}))
+    this.setState(prevState => ({isLogin: !prevState.isLogin}))
   }
 
   clickButton = () => {
@@ -23,7 +23,7 @@ class Login extends Component {
       )
     }
     return (
-      <button type="button" className="login-button" onClick={this.clickButton}>
+      <button type="button" className="login-button" onClick={this.loginButton}>
         Logout
       </button>
     )
