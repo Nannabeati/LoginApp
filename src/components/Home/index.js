@@ -8,14 +8,18 @@ import './index.css'
 class Home extends Component {
   state = {isLogin: true}
 
+  loginButton = () => {
+    this.setState(prevState => ({isLogin: !prevState.isLogin}))
+  }
+
   render() {
     const {isLogin} = this.state
 
     return (
       <div className="container">
         <Message />
-        {isLogin && <Login />}
-        {!isLogin && <Logout />}
+        {isLogin && <Login loginButton={this.loginButton} />}
+        {!isLogin && <Logout loginButton={this.loginButton} />}
       </div>
     )
   }
